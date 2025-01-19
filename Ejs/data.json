@@ -1,0 +1,26 @@
+{
+    "satish":{
+        "name":"satish",
+        "follower":5777,
+        "following":4,
+        "post":3
+    },
+    "rahul":{
+        "name":"rahul",
+        "follower":5777,
+        "following":4,
+        "post":3
+    },
+    "rohit":{
+        "name":"rohit",
+        "follower":5777,
+        "following":4,
+        "post":3
+    },
+    "vandana":{
+        "name":"vandana",
+        "follower":5777,
+        "following":4,
+        "post":3
+    }
+}

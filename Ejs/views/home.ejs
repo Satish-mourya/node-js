@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>this is a homepage</h1>
+    <p>it is satish</p>
+    <button onclick="refresh()">say thank</button>
+    <h3>the dice value is <%=dice%></h3>
+    <ul>
+    <% for(name of follower){ %>
+       
+            <li><%= name %></li>
+        
+        <% } %>
+
+    </ul>
+    <% if(dice==6){ %>
+        <h3>yee you got 6</h3>
+
+        <% } %>
+    <script>
+        function refresh() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
