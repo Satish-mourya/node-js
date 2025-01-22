@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <% for(i of employee){ %>
+            <li><%= i.id %></li>
+            <li><%= i.name %></li>
+            <li><%= i.salary %></li>
+            <button><a href="/edit/<%= i.id %>">edit</a></button>
+            <button><a href="/delete/<%= i.id %>">delete</a></button>
+            <hr>
+            <% } %>
+            
+    </ul>
+    <button><a href="/new">add new </a></button>
+    
+</body>
+</html>
