@@ -72,8 +72,29 @@ const  Employee=mongoose.model("Employee",userSchema);
 
 
 // update and return these updated value
-User.findOneAndUpdate({age:21},{name:"vivek"},{new:true}).then((res)=>{  // return value contain without updated data but it is updated in document 
+//1.findOneAndUpdate()
+//2.findByIdAndUpdate()
+/*User.findOneAndUpdate({age:21},{name:"vivek"},{new:true}).then((res)=>{  // return value contain without updated data but it is updated in document 
     console.log(res);
 }).catch((err)=>{
     console.log(err)
+})*/
+
+
+
+
+// // delete operation
+// //1.deleteOne()
+// User.deleteOne({name:"Tony"}).then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+// delete and get that value in retuen 
+// 1.model.findByIdAndDelete()
+// 2.model.findOneAndDelete()
+
+User.findOneAndDelete({name:"Tony"}).then((res)=>{
+    console.log(res)
 })
